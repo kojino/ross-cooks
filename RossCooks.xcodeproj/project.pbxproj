@@ -69,19 +69,19 @@
 			children = (
 				3FAA58781DB03D7C0083A691 /* data.json */,
 			);
-			name = Data;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		3FAA58641DB03C570083A691 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3FAA58691DB03CB30083A691 /* RecipeViewController.swift */,
 				3FAA586B1DB03CC40083A691 /* LoginViewController.swift */,
-				3FAA586D1DB03CD10083A691 /* RecipeListViewController.swift */,
-				3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */,
 				3FAA58711DB03CF00083A691 /* ProfileViewController.swift */,
+				3FAA586D1DB03CD10083A691 /* RecipeListViewController.swift */,
+				3FAA58691DB03CB30083A691 /* RecipeViewController.swift */,
+				3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */,
 			);
-			name = ViewControllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3FAA58651DB03C600083A691 /* Models */ = {
@@ -90,7 +90,7 @@
 				3FAA58671DB03C890083A691 /* Recipe.swift */,
 				3FAA58731DB03D0B0083A691 /* User.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3FAA58661DB03C680083A691 /* Views */ = {
@@ -98,7 +98,7 @@
 			children = (
 				3FAA58761DB03D4D0083A691 /* RecipeListTableViewCell.swift */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3FAA58751DB03D130083A691 /* HelperFiles */ = {
@@ -107,16 +107,16 @@
 				3FCBEA691DB03B7C00714AC5 /* AppDelegate.swift */,
 				3FCBEA751DB03B7C00714AC5 /* Info.plist */,
 			);
-			name = HelperFiles;
+			path = HelperFiles;
 			sourceTree = "<group>";
 		};
 		3FCBEA5D1DB03B7C00714AC5 = {
 			isa = PBXGroup;
 			children = (
-				3FCBEA681DB03B7C00714AC5 /* RossCooks */,
-				3FCBEA671DB03B7C00714AC5 /* Products */,
-				DCA5904694724CC0F23C1179 /* Pods */,
 				217DC18513AA0CB55FFA679B /* Frameworks */,
+				DCA5904694724CC0F23C1179 /* Pods */,
+				3FCBEA671DB03B7C00714AC5 /* Products */,
+				3FCBEA681DB03B7C00714AC5 /* RossCooks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,14 +131,14 @@
 		3FCBEA681DB03B7C00714AC5 /* RossCooks */ = {
 			isa = PBXGroup;
 			children = (
+				3FAA58631DB03C450083A691 /* Data */,
 				3FAA58751DB03D130083A691 /* HelperFiles */,
-				3FAA58661DB03C680083A691 /* Views */,
 				3FAA58651DB03C600083A691 /* Models */,
 				3FAA58641DB03C570083A691 /* ViewControllers */,
-				3FAA58631DB03C450083A691 /* Data */,
-				3FCBEA6D1DB03B7C00714AC5 /* Main.storyboard */,
+				3FAA58661DB03C680083A691 /* Views */,
 				3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */,
 				3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */,
+				3FCBEA6D1DB03B7C00714AC5 /* Main.storyboard */,
 			);
 			path = RossCooks;
 			sourceTree = "<group>";
@@ -298,6 +298,7 @@
 				3FCBEA6E1DB03B7C00714AC5 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */ = {
@@ -306,6 +307,7 @@
 				3FCBEA731DB03B7C00714AC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SGZ32NWR4Z;
-				INFOPLIST_FILE = RossCooks/Info.plist;
+				INFOPLIST_FILE = RossCooks/HelperFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.luhagel.RossCooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SGZ32NWR4Z;
-				INFOPLIST_FILE = RossCooks/Info.plist;
+				INFOPLIST_FILE = RossCooks/HelperFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.luhagel.RossCooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
