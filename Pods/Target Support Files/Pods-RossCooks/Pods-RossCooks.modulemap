@@ -1,0 +1,6 @@
+framework module Pods_RossCooks {
+  umbrella header "Pods-RossCooks-umbrella.h"
+
+  export *
+  module * { export * }
+}
