@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F911B2E1DB6BAF200A121CD /* RecipeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */; };
+		3F911B301DB6BB0100A121CD /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F911B2F1DB6BB0100A121CD /* JSONHelper.swift */; };
 		3FAA58681DB03C890083A691 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58671DB03C890083A691 /* Recipe.swift */; };
 		3FAA586A1DB03CB30083A691 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58691DB03CB30083A691 /* RecipeViewController.swift */; };
 		3FAA586C1DB03CC40083A691 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA586B1DB03CC40083A691 /* LoginViewController.swift */; };
-		3FAA586E1DB03CD10083A691 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA586D1DB03CD10083A691 /* RecipeListViewController.swift */; };
 		3FAA58701DB03CE20083A691 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */; };
 		3FAA58721DB03CF00083A691 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58711DB03CF00083A691 /* ProfileViewController.swift */; };
 		3FAA58741DB03D0B0083A691 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58731DB03D0B0083A691 /* User.swift */; };
@@ -25,10 +26,11 @@
 
 /* Begin PBXFileReference section */
 		17C2FA50789D64CCD7CB7911 /* Pods_RossCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RossCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewController.swift; sourceTree = "<group>"; };
+		3F911B2F1DB6BB0100A121CD /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		3FAA58671DB03C890083A691 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3FAA58691DB03CB30083A691 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		3FAA586B1DB03CC40083A691 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3FAA586D1DB03CD10083A691 /* RecipeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
 		3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
 		3FAA58711DB03CF00083A691 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3FAA58731DB03D0B0083A691 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -77,9 +79,9 @@
 			children = (
 				3FAA586B1DB03CC40083A691 /* LoginViewController.swift */,
 				3FAA58711DB03CF00083A691 /* ProfileViewController.swift */,
-				3FAA586D1DB03CD10083A691 /* RecipeListViewController.swift */,
 				3FAA58691DB03CB30083A691 /* RecipeViewController.swift */,
 				3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */,
+				3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,6 +108,7 @@
 			children = (
 				3FCBEA691DB03B7C00714AC5 /* AppDelegate.swift */,
 				3FCBEA751DB03B7C00714AC5 /* Info.plist */,
+				3F911B2F1DB6BB0100A121CD /* JSONHelper.swift */,
 			);
 			path = HelperFiles;
 			sourceTree = "<group>";
@@ -279,13 +282,14 @@
 			files = (
 				3FAA586A1DB03CB30083A691 /* RecipeViewController.swift in Sources */,
 				3FAA58681DB03C890083A691 /* Recipe.swift in Sources */,
-				3FAA586E1DB03CD10083A691 /* RecipeListViewController.swift in Sources */,
 				3FAA58771DB03D4D0083A691 /* RecipeListTableViewCell.swift in Sources */,
 				3FAA58701DB03CE20083A691 /* SubmissionViewController.swift in Sources */,
 				3FAA58741DB03D0B0083A691 /* User.swift in Sources */,
 				3FAA586C1DB03CC40083A691 /* LoginViewController.swift in Sources */,
 				3FAA58721DB03CF00083A691 /* ProfileViewController.swift in Sources */,
+				3F911B2E1DB6BAF200A121CD /* RecipeListTableViewController.swift in Sources */,
 				3FCBEA6A1DB03B7C00714AC5 /* AppDelegate.swift in Sources */,
+				3F911B301DB6BB0100A121CD /* JSONHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
