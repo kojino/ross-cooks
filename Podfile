@@ -6,5 +6,5 @@ target 'RossCooks' do
   use_frameworks!
 
   # Pods for RossCooks
-
+  pod 'SwiftyJSON'
 end
