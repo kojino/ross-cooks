@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F90C8B71DB96E5E00CAC839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F90C8B61DB96E5E00CAC839 /* GoogleService-Info.plist */; };
 		3F911B2E1DB6BAF200A121CD /* RecipeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */; };
 		3F911B301DB6BB0100A121CD /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F911B2F1DB6BB0100A121CD /* JSONHelper.swift */; };
 		3FAA58681DB03C890083A691 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58671DB03C890083A691 /* Recipe.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		17C2FA50789D64CCD7CB7911 /* Pods_RossCooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RossCooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F90C8B61DB96E5E00CAC839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewController.swift; sourceTree = "<group>"; };
 		3F911B2F1DB6BB0100A121CD /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		3FAA58671DB03C890083A691 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		3FAA58751DB03D130083A691 /* HelperFiles */ = {
 			isa = PBXGroup;
 			children = (
+				3F90C8B61DB96E5E00CAC839 /* GoogleService-Info.plist */,
 				3FCBEA691DB03B7C00714AC5 /* AppDelegate.swift */,
 				3FCBEA751DB03B7C00714AC5 /* Info.plist */,
 				3F911B2F1DB6BB0100A121CD /* JSONHelper.swift */,
@@ -223,6 +226,7 @@
 			files = (
 				3FCBEA741DB03B7C00714AC5 /* LaunchScreen.storyboard in Resources */,
 				3FCBEA711DB03B7C00714AC5 /* Assets.xcassets in Resources */,
+				3F90C8B71DB96E5E00CAC839 /* GoogleService-Info.plist in Resources */,
 				3FCBEA6F1DB03B7C00714AC5 /* Main.storyboard in Resources */,
 				3FAA58791DB03D7C0083A691 /* data.json in Resources */,
 			);
