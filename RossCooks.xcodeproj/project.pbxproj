@@ -79,9 +79,9 @@
 		3FAA58641DB03C570083A691 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3FAA58691DB03CB30083A691 /* RecipeViewController.swift */,
 				3FAA586B1DB03CC40083A691 /* LoginViewController.swift */,
 				3FAA58711DB03CF00083A691 /* ProfileViewController.swift */,
-				3FAA58691DB03CB30083A691 /* RecipeViewController.swift */,
 				3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */,
 				3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */,
 			);

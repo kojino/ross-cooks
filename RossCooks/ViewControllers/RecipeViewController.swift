@@ -16,7 +16,12 @@ class RecipeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // Along with auto layout, these are the keys for enabling variable cell height
+        //tableView.estimatedRowHeight = 44.0
+        //tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,12 +31,13 @@ class RecipeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RecipePhoto", for: indexPath)
             return cell
         }
         else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath) as! RequirementsTableViewCell
-            cell.textViewIngredients.text = "Whatever"
+            cell.textViewIngredients.text = "Ingredients list here"
+            cell.textViewTools.text = "Tools list here"
             cell.textViewIngredients.sizeToFit()
             cell.textViewTools.sizeToFit()
             
@@ -39,9 +45,8 @@ class RecipeViewController: UITableViewController {
                 requirementsCellHeight = cell.textViewTools.contentSize.height
             }
             else {
-                
+                requirementsCellHeight = cell.textViewIngredients.contentSize.height
             }
-            
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath)
@@ -60,12 +65,17 @@ class RecipeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 1 {
+        if indexPath.row == 0 {
+            return 110
+        }
+        else if indexPath.row == 1 {
             return requirementsCellHeight
         }
-        return 44
+        else {
+            return 44
+        }
+        
     }
-    
 
     /*
     // MARK: - Navigation
