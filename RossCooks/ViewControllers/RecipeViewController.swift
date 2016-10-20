@@ -15,13 +15,10 @@ class RecipeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.delegate = self
-        tableView.dataSource = self
         
         // Along with auto layout, these are the keys for enabling variable cell height
-        //tableView.estimatedRowHeight = 44.0
-        //tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,17 +33,20 @@ class RecipeViewController: UITableViewController {
         }
         else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath) as! RequirementsTableViewCell
-            cell.textViewIngredients.text = "Ingredients list here"
-            cell.textViewTools.text = "Tools list here"
-            cell.textViewIngredients.sizeToFit()
-            cell.textViewTools.sizeToFit()
+            cell.labelIngredients.text = "Ingredients list here"
+            cell.labelTools.text = "Tools list here"
+            //cell.labelIngredients.sizeToFit()
+            //cell.labelTools.sizeToFit()
             
-            if cell.textViewTools.contentSize.height > cell.textViewIngredients.contentSize.height {
-                requirementsCellHeight = cell.textViewTools.contentSize.height
+            /*
+            if cell.labelTools. > cell.labelIngredients.contentSize.height {
+                requirementsCellHeight = cell.labelTools.contentSize.height
             }
             else {
-                requirementsCellHeight = cell.textViewIngredients.contentSize.height
+                requirementsCellHeight = cell.labelIngredients.contentSize.height
             }
+            */
+            
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath)
@@ -62,12 +62,14 @@ class RecipeViewController: UITableViewController {
         return 2
     }
     
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 110
         }
         else if indexPath.row == 1 {
-            return requirementsCellHeight
+            //return requirementsCellHeight
+            return 200
         }
         else {
             return 44

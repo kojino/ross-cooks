@@ -9,8 +9,8 @@
 import UIKit
 
 class RequirementsTableViewCell: UITableViewCell {
-    @IBOutlet weak var textViewIngredients: UITextView!
-    @IBOutlet weak var textViewTools: UITextView!
+    @IBOutlet weak var labelIngredients: UILabel!
+    @IBOutlet weak var labelTools: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
