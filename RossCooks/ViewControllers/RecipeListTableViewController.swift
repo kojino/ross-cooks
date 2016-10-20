@@ -41,6 +41,9 @@ class RecipeListTableViewController: UITableViewController {
       
         // Configure the cell...
         cell.recipeTitleLabel.text = recipes[indexPath.row].title
+      
+        cell.backgroundColor = UIColor.darkGray
+        cell.recipeTitleLabel.textColor = UIColor.white
 
         return cell
     }
