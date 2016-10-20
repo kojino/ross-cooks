@@ -9,11 +9,16 @@
 import UIKit
 
 class RecipeListTableViewController: UITableViewController {
+    var recipes: [Recipe]! {
+      didSet {
+        tableView.reloadData()
+      }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let recipes: [Recipe] = JSONHelper.loadTestRecipes()
+      recipes = JSONHelper.loadTestRecipes()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,24 +29,21 @@ class RecipeListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.recipes.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeListTableViewCell
+      
         // Configure the cell...
+        cell.recipeTitleLabel.text = recipes[indexPath.row].title
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -78,14 +80,18 @@ class RecipeListTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+      if segue.identifier == "ShowRecipe" {
+        let destination = segue.destination as! RecipeViewController
+        if let indexPath = tableView.indexPathForSelectedRow {
+          destination.recipe = recipes[indexPath.row]
+        }
+      }
     }
-    */
 
 }

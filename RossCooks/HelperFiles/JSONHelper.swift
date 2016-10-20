@@ -12,8 +12,14 @@ import SwiftyJSON
 class JSONHelper {
     static func loadTestRecipes() -> [Recipe] {
         let path: URL = Bundle.main.url(forResource: "data", withExtension: "json")!
-        let file = NSData(contentsOf: path)
-        let json = JSON(file)
+      var file: Data? = nil
+        do {
+          file = try Data(contentsOf: path)
+        }
+        catch is NSError {
+          print("fail")
+        }
+        let json = JSON(data: file!)
         
         var recipeArray: [Recipe] = []
         for recipe in json["Recipes"].arrayValue {

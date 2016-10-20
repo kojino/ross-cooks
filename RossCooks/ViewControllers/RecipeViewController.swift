@@ -9,7 +9,8 @@
 import UIKit
 
 class RecipeViewController: UITableViewController {
-    
+    var recipe: Recipe!
+  
     var requirementsCellHeight:CGFloat = 225
     
     override func viewDidLoad() {
@@ -25,7 +26,7 @@ class RecipeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath)
             return cell
         }
         else if indexPath.row == 1 {
@@ -43,7 +44,7 @@ class RecipeViewController: UITableViewController {
             
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath)
             return cell
         }
     }
