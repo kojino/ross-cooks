@@ -22,6 +22,7 @@
 		3FCBEA711DB03B7C00714AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */; };
 		3FCBEA741DB03B7C00714AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */; };
 		44BBA203D7647AF3B1DDBC0E /* Pods_RossCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C2FA50789D64CCD7CB7911 /* Pods_RossCooks.framework */; };
+		91AD48B71DB9363E004C992A /* RequirementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3FCBEA751DB03B7C00714AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7696F4E222340DFDFE9502A4 /* Pods-RossCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.debug.xcconfig"; sourceTree = "<group>"; };
 		7FE7CF93479B6C620FB7C907 /* Pods-RossCooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.release.xcconfig"; sourceTree = "<group>"; };
+		91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequirementsTableViewCell.swift; path = ../ViewControllers/RequirementsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		3FAA58661DB03C680083A691 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */,
 				3FAA58761DB03D4D0083A691 /* RecipeListTableViewCell.swift */,
 			);
 			path = Views;
@@ -190,7 +193,7 @@
 				TargetAttributes = {
 					3FCBEA651DB03B7C00714AC5 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SGZ32NWR4Z;
+						DevelopmentTeam = PT47R5Y4XZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -284,6 +287,7 @@
 				3FAA58681DB03C890083A691 /* Recipe.swift in Sources */,
 				3FAA58771DB03D4D0083A691 /* RecipeListTableViewCell.swift in Sources */,
 				3FAA58701DB03CE20083A691 /* SubmissionViewController.swift in Sources */,
+				91AD48B71DB9363E004C992A /* RequirementsTableViewCell.swift in Sources */,
 				3FAA58741DB03D0B0083A691 /* User.swift in Sources */,
 				3FAA586C1DB03CC40083A691 /* LoginViewController.swift in Sources */,
 				3FAA58721DB03CF00083A691 /* ProfileViewController.swift in Sources */,
@@ -415,7 +419,7 @@
 			baseConfigurationReference = 7696F4E222340DFDFE9502A4 /* Pods-RossCooks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SGZ32NWR4Z;
+				DEVELOPMENT_TEAM = PT47R5Y4XZ;
 				INFOPLIST_FILE = RossCooks/HelperFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.luhagel.RossCooks;
@@ -429,7 +433,7 @@
 			baseConfigurationReference = 7FE7CF93479B6C620FB7C907 /* Pods-RossCooks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SGZ32NWR4Z;
+				DEVELOPMENT_TEAM = PT47R5Y4XZ;
 				INFOPLIST_FILE = RossCooks/HelperFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.luhagel.RossCooks;

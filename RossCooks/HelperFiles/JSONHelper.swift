@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 class JSONHelper {
-    static func parseJSONToRecipe(recipeJSON: JSON) -> Recipe {
+    //static func parseJSONToRecipe(recipeJSON: JSON) -> Recipe {
         
-    }
+    //}
 }
