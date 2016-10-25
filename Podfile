@@ -8,5 +8,4 @@ target 'RossCooks' do
   # Pods for RossCooks
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
-  pod 'FirebaseUI', '~> 0.6'
 end

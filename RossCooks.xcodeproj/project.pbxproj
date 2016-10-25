@@ -22,6 +22,7 @@
 		3FCBEA6F1DB03B7C00714AC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA6D1DB03B7C00714AC5 /* Main.storyboard */; };
 		3FCBEA711DB03B7C00714AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */; };
 		3FCBEA741DB03B7C00714AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */; };
+		3FD97FE91DC00273009B7D97 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD97FE81DC00273009B7D97 /* LoginViewController.storyboard */; };
 		44BBA203D7647AF3B1DDBC0E /* Pods_RossCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C2FA50789D64CCD7CB7911 /* Pods_RossCooks.framework */; };
 		91AD48B71DB9363E004C992A /* RequirementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCBEA731DB03B7C00714AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FCBEA751DB03B7C00714AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD97FE81DC00273009B7D97 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		7696F4E222340DFDFE9502A4 /* Pods-RossCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.debug.xcconfig"; sourceTree = "<group>"; };
 		7FE7CF93479B6C620FB7C907 /* Pods-RossCooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.release.xcconfig"; sourceTree = "<group>"; };
 		91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequirementsTableViewCell.swift; path = ../ViewControllers/RequirementsTableViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */,
 				3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */,
 				3FCBEA6D1DB03B7C00714AC5 /* Main.storyboard */,
+				3FD97FE81DC00273009B7D97 /* LoginViewController.storyboard */,
 			);
 			path = RossCooks;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				3FCBEA741DB03B7C00714AC5 /* LaunchScreen.storyboard in Resources */,
 				3FCBEA711DB03B7C00714AC5 /* Assets.xcassets in Resources */,
 				3F2E81311DB972EF005478E6 /* GoogleService-Info.plist in Resources */,
+				3FD97FE91DC00273009B7D97 /* LoginViewController.storyboard in Resources */,
 				3FCBEA6F1DB03B7C00714AC5 /* Main.storyboard in Resources */,
 				3FAA58791DB03D7C0083A691 /* data.json in Resources */,
 			);
