@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>348652383466-5802i982dtaq1har0irtt4v72vkefuu7.apps.googleusercontent.com</string>
+	<string>555584244249-5mnt6u4ech65ck7idb2innd96e8d6vjm.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.348652383466-5802i982dtaq1har0irtt4v72vkefuu7</string>
+	<string>com.googleusercontent.apps.555584244249-5mnt6u4ech65ck7idb2innd96e8d6vjm</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDOxYP1z9XBAj1koY9imv8RUSfY-uEDAg4</string>
+	<string>AIzaSyB26yu6mdvIlj5c9lq8vukcejAUnv8mMVQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>348652383466</string>
+	<string>555584244249</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>tech.luhagel.rosscooks</string>
+	<string>tech.luhagel.RossCooks</string>
 	<key>PROJECT_ID</key>
-	<string>rosscooks-ba4bb</string>
+	<string>rosscooks-1b2e3</string>
 	<key>STORAGE_BUCKET</key>
-	<string>rosscooks-ba4bb.appspot.com</string>
+	<string>rosscooks-1b2e3.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:348652383466:ios:81b44f81cdb26d02</string>
+	<string>1:555584244249:ios:43f06c9dbd622955</string>
 	<key>DATABASE_URL</key>
-	<string>https://rosscooks-ba4bb.firebaseio.com</string>
+	<string>https://rosscooks-1b2e3.firebaseio.com</string>
 </dict>
 </plist>
