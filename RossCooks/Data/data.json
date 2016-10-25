@@ -6,18 +6,18 @@
       "Difficulty": 1,
       "image": "salmon",
       "Tools": [
-        "11x7 Baking Dish",
-        "Small Bowl",
-        "Oven"
+        "11x7 baking dish",
+        "small bowl",
+        "oven"
       ],
       "Ingredients": [
-        "Salmon Filet",
-        "Barbecue Sauce",
-        "Raspberry Jam"
+        "2 salmon filets",
+        "barbecue sauce",
+        "raspberry jam"
       ],
       "Tags": [
-        "Seafood",
-        "Dinner"
+        "seafood",
+        "dinner"
       ],
       "Steps": [
         {
@@ -58,53 +58,80 @@
       "Difficulty": 1,
       "image": "chicken",
       "Tools": [
-        "Knife",
-        "Pan",
-        "Plate"
+        "stove",
+        "large skillet",
+        "utensils"
       ],
       "Ingredients": [
-        "Chicken Breast",
-        "Eggs",
-        "Black Pepper",
-        "Salt"
+        "chicken breasts",
+        "butter",
+        "garlic powder",
+        "onion powder"
       ],
       "Tags": [
-        "Lunch",
-        "Dinner",
-        "Spicy"
+        "dinner",
+        "chicken"
       ],
       "Steps": [
         {
-          "Step_Title": "Cut Chicken",
-          "imgage": "knife.jpg",
-          "description": "Cut the chicken into small, equally sized bits."
+          "Step_Title": "Heat Butter",
+          "imgage": "",
+          "description": "Melt butter in a large skillet over medium high heat."
         },
         {
-          "Step_Title": "Spice Chicken",
-          "imgage": "salt.jpg",
-          "description": "Roll the chicken bits in a mixy=ture of salt and pepper"
+          "Step_Title": "",
+          "imgage": "",
+          "description": "Place chicken breasts in the pan."
         },
         {
-          "Step_Title": "Cut Chicken",
-          "imgage": "knife.jpg",
-          "description": "Cut the chicken into small, equally sized bits."
+          "Step_Title": "Season",
+          "imgage": "",
+          "description": "Sprinkle chicken breasts with garlic powder, seasoning salt and onion powder"
         },
         {
-          "Step_Title": "Spice Chicken",
-          "imgage": "salt.jpg",
-          "description": "Roll the chicken bits in a mixy=ture of salt and pepper"
-        },
-        {
-          "Step_Title": "Cut Chicken",
-          "imgage": "knife.jpg",
-          "description": "Cut the chicken into small, equally sized bits."
-        },
-        {
-          "Step_Title": "Spice Chicken",
-          "imgage": "salt.jpg",
-          "description": "Roll the chicken bits in a mixy=ture of salt and pepper"
+          "Step_Title": "Saute",
+          "imgage": "",
+          "description": "Saute about 10 to 15 minutes on each side, or until chicken is cooked through and juices run clear"
         }
       ]
-    }
+    },
+   {
+     "Title": "Balsamic Glazed Carrots",
+     "Rating": 3,
+     "Difficulty": 1,
+     "image": "carrots",
+     "Tools": [
+       "stove",
+       "medium skillet",
+       "utensils"
+      ],
+     "Ingredients": [
+       "baby carrots",
+       "olive oil",
+       "balsamic vinegar",
+       "brown sugar"
+      ],
+     "Tags": [
+      "side",
+      "vegetarian"
+     ],
+     "Steps": [
+       {
+       "Step_Title": "",
+       "imgage": "",
+       "description": "Heat oil in a skillet over medium-high heat"
+       },
+       {
+       "Step_Title": "",
+       "imgage": "",
+       "description": "Saute carrots in oil for about 10 minutes, or until tender"
+       },
+       {
+       "Step_Title": "",
+       "imgage": "",
+       "description": "Stir in balsamic vinegar and brown sugar, mix to coat and serve."
+       }
+     ]
+   }
   ]
 }
