@@ -1,64 +1,62 @@
 {
   "Recipes":[
     {
-      "Title": "Test Recipe",
-      "Rating": 3,
+      "Title": "KISS Salmon",
+      "Rating": 4,
       "Difficulty": 1,
-      "image": "test.jpg",
+      "image": "salmon",
       "Tools": [
-        "Knife",
-        "Pan",
-        "Plate"
+        "11x7 Baking Dish",
+        "Small Bowl",
+        "Oven"
       ],
       "Ingredients": [
-        "Chicken Breast",
-        "Eggs",
-        "Black Pepper",
-        "Salt"
+        "Salmon Filet",
+        "Barbecue Sauce",
+        "Raspberry Jam"
       ],
       "Tags": [
-        "Lunch",
-        "Dinner",
-        "Spicy"
+        "Seafood",
+        "Dinner"
       ],
       "Steps": [
         {
-          "Step_Title": "Cut Chicken",
-          "imgage": "knife.jpg",
-          "description": "Cut the chicken into small, equally sized bits."
+          "Step_Title": "Preheat",
+          "imgage": "",
+          "description": "Preheat oven to 400 degrees F (200 degrees C)."
         },
         {
-          "Step_Title": "Spice Chicken",
-          "imgage": "salt.jpg",
-          "description": "Roll the chicken bits in a mixy=ture of salt and pepper"
+          "Step_Title": "",
+          "imgage": "",
+          "description": "Grease an 11x7-inch baking dish."
         },
         {
-          "Step_Title": "Cut Chicken",
-          "imgage": "knife.jpg",
-          "description": "Cut the chicken into small, equally sized bits."
+          "Step_Title": "",
+          "imgage": "",
+          "description": "Place the salmon fillets into the prepared baking dish with skin sides down."
         },
         {
-          "Step_Title": "Spice Chicken",
-          "imgage": "salt.jpg",
-          "description": "Roll the chicken bits in a mixy=ture of salt and pepper"
+          "Step_Title": "Make Sauce",
+          "imgage": "",
+          "description": "Stir the barbeque sauce and raspberry jam together in a small bowl."
         },
         {
-          "Step_Title": "Cut Chicken",
-          "imgage": "knife.jpg",
-          "description": "Cut the chicken into small, equally sized bits."
+          "Step_Title": "Brush Sauce",
+          "imgage": "",
+          "description": "Generously brush the mixture over the salmon."
         },
         {
-          "Step_Title": "Spice Chicken",
-          "imgage": "salt.jpg",
-          "description": "Roll the chicken bits in a mixy=ture of salt and pepper"
+          "Step_Title": "Bake",
+          "imgage": "",
+          "description": "Bake in the preheated oven until the salmon is opaque and flakes easily with a fork, 35 to 40 minutes. Brush again with the sauce mixture after the first 15 minutes of baking time."
         }
       ]
     },
     {
-      "Title": "Test Recipe 2",
-      "Rating": 3,
+      "Title": "Easy Garlic Chicken",
+      "Rating": 4,
       "Difficulty": 1,
-      "image": "test.jpg",
+      "image": "chicken",
       "Tools": [
         "Knife",
         "Pan",

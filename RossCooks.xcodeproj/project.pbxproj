@@ -24,6 +24,7 @@
 		3FCBEA741DB03B7C00714AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */; };
 		44BBA203D7647AF3B1DDBC0E /* Pods_RossCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C2FA50789D64CCD7CB7911 /* Pods_RossCooks.framework */; };
 		91AD48B71DB9363E004C992A /* RequirementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */; };
+		91AD48E61DBFFFEB004C992A /* RecipeImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD48E51DBFFFEB004C992A /* RecipeImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		7696F4E222340DFDFE9502A4 /* Pods-RossCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.debug.xcconfig"; sourceTree = "<group>"; };
 		7FE7CF93479B6C620FB7C907 /* Pods-RossCooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.release.xcconfig"; sourceTree = "<group>"; };
 		91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequirementsTableViewCell.swift; path = ../ViewControllers/RequirementsTableViewCell.swift; sourceTree = "<group>"; };
+		91AD48E51DBFFFEB004C992A /* RecipeImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */,
 				3FAA58761DB03D4D0083A691 /* RecipeListTableViewCell.swift */,
+				91AD48E51DBFFFEB004C992A /* RecipeImageTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				3F911B2E1DB6BAF200A121CD /* RecipeListTableViewController.swift in Sources */,
 				3FCBEA6A1DB03B7C00714AC5 /* AppDelegate.swift in Sources */,
 				3F911B301DB6BB0100A121CD /* JSONHelper.swift in Sources */,
+				91AD48E61DBFFFEB004C992A /* RecipeImageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

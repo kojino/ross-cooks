@@ -13,12 +13,16 @@ class RecipeViewController: UITableViewController {
   
     var requirementsCellHeight:CGFloat = 225
     
+    let numberOfCellsBeforeSteps = 3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.allowsSelection = false;
+        
         // Along with auto layout, these are the keys for enabling variable cell height
-        tableView.estimatedRowHeight = 44.0
-        tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.estimatedRowHeight = 44.0
+        //tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,15 +32,33 @@ class RecipeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "RecipePhoto", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RecipePhoto", for: indexPath) as! RecipeImageTableViewCell
+            cell.recipeImageView?.image = UIImage(named: recipe.image)
+            
             return cell
         }
         else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath) as! RequirementsTableViewCell
-            cell.labelIngredients.text = "Ingredients list here"
-            cell.labelTools.text = "Tools list here"
-            //cell.labelIngredients.sizeToFit()
-            //cell.labelTools.sizeToFit()
+            
+            let ingredientsList = recipe.ingredients
+            let toolsList = recipe.tools
+            
+            cell.labelIngredients.lineBreakMode = NSLineBreakMode.byWordWrapping
+            cell.labelTools.lineBreakMode = NSLineBreakMode.byWordWrapping
+            
+            cell.labelIngredients.numberOfLines = 0
+            cell.labelTools.numberOfLines = 0
+            
+            cell.labelIngredients.text = ""
+            cell.labelTools.text = ""
+            
+            for ingredient in ingredientsList {
+                cell.labelIngredients.text?.append(ingredient + "\n")
+            }
+            
+            for tool in toolsList {
+                cell.labelTools.text?.append(tool + "\n")
+            }
             
             /*
             if cell.labelTools. > cell.labelIngredients.contentSize.height {
@@ -48,8 +70,14 @@ class RecipeViewController: UITableViewController {
             */
             
             return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "requirementsCell", for: indexPath)
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "stepsLabelCell", for: indexPath)
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath)
+            cell.textLabel?.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].stepTitle
+            cell.detailTextLabel?.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].description
             return cell
         }
     }
@@ -59,7 +87,7 @@ class RecipeViewController: UITableViewController {
     }
   
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return recipe.steps.count + numberOfCellsBeforeSteps
     }
     
     
@@ -69,7 +97,7 @@ class RecipeViewController: UITableViewController {
         }
         else if indexPath.row == 1 {
             //return requirementsCellHeight
-            return 200
+            return 150
         }
         else {
             return 44
