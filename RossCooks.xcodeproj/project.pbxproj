@@ -158,8 +158,8 @@
 				3FAA58641DB03C570083A691 /* ViewControllers */,
 				3FAA58661DB03C680083A691 /* Views */,
 				3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */,
-				3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */,
 				3FCBEA6D1DB03B7C00714AC5 /* Main.storyboard */,
+				3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */,
 				3FD97FE81DC00273009B7D97 /* LoginViewController.storyboard */,
 				3F6EB0C41DC00AE60071D696 /* SignUpVC.storyboard */,
 			);
