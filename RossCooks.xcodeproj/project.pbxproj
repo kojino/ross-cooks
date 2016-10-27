@@ -24,6 +24,7 @@
 		3FCBEA711DB03B7C00714AC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA701DB03B7C00714AC5 /* Assets.xcassets */; };
 		3FCBEA741DB03B7C00714AC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCBEA721DB03B7C00714AC5 /* LaunchScreen.storyboard */; };
 		3FD97FE91DC00273009B7D97 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD97FE81DC00273009B7D97 /* LoginViewController.storyboard */; };
+		3FE1DF051DC1AA2F00EAE573 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1DF041DC1AA2F00EAE573 /* SignupViewController.swift */; };
 		44BBA203D7647AF3B1DDBC0E /* Pods_RossCooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C2FA50789D64CCD7CB7911 /* Pods_RossCooks.framework */; };
 		91AD48B71DB9363E004C992A /* RequirementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */; };
 		91AD48E61DBFFFEB004C992A /* RecipeImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AD48E51DBFFFEB004C992A /* RecipeImageTableViewCell.swift */; };
@@ -51,6 +52,7 @@
 		3FCBEA731DB03B7C00714AC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FCBEA751DB03B7C00714AC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD97FE81DC00273009B7D97 /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		3FE1DF041DC1AA2F00EAE573 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		7696F4E222340DFDFE9502A4 /* Pods-RossCooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.debug.xcconfig"; sourceTree = "<group>"; };
 		7FE7CF93479B6C620FB7C907 /* Pods-RossCooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RossCooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-RossCooks/Pods-RossCooks.release.xcconfig"; sourceTree = "<group>"; };
 		91AD48B61DB9363E004C992A /* RequirementsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequirementsTableViewCell.swift; path = ../ViewControllers/RequirementsTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				3FAA58691DB03CB30083A691 /* RecipeViewController.swift */,
 				3FAA586B1DB03CC40083A691 /* LoginViewController.swift */,
+				3FE1DF041DC1AA2F00EAE573 /* SignupViewController.swift */,
 				3FAA58711DB03CF00083A691 /* ProfileViewController.swift */,
 				3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */,
 				3F911B2D1DB6BAF200A121CD /* RecipeListTableViewController.swift */,
@@ -314,6 +317,7 @@
 				3FAA586C1DB03CC40083A691 /* LoginViewController.swift in Sources */,
 				3FAA58721DB03CF00083A691 /* ProfileViewController.swift in Sources */,
 				3F911B2E1DB6BAF200A121CD /* RecipeListTableViewController.swift in Sources */,
+				3FE1DF051DC1AA2F00EAE573 /* SignupViewController.swift in Sources */,
 				3FCBEA6A1DB03B7C00714AC5 /* AppDelegate.swift in Sources */,
 				3F911B301DB6BB0100A121CD /* JSONHelper.swift in Sources */,
 				91AD48E61DBFFFEB004C992A /* RecipeImageTableViewCell.swift in Sources */,
@@ -362,6 +366,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -412,6 +417,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -441,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7696F4E222340DFDFE9502A4 /* Pods-RossCooks.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RossCooks/RossCooks.entitlements;
 				DEVELOPMENT_TEAM = SGZ32NWR4Z;
@@ -456,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FE7CF93479B6C620FB7C907 /* Pods-RossCooks.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RossCooks/RossCooks.entitlements;
 				DEVELOPMENT_TEAM = SGZ32NWR4Z;

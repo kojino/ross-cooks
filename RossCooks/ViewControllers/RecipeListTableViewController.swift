@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class RecipeListTableViewController: UITableViewController {
+  
+  @IBOutlet weak var loginButton: UIBarButtonItem!
+  
     var recipes: [Recipe]! {
       didSet {
         tableView.reloadData()
@@ -20,6 +24,12 @@ class RecipeListTableViewController: UITableViewController {
 
       recipes = JSONHelper.loadTestRecipes()
     }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    if let user = FIRAuth.auth()?.currentUser {
+      self.loginButton.title = user.email
+    }
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

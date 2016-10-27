@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NZ3-MT-4yV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NZ3-MT-4yV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Kf7-VT-M5t">
             <objects>
-                <viewController id="NZ3-MT-4yV" sceneMemberID="viewController">
+                <viewController id="NZ3-MT-4yV" customClass="LoginViewController" customModule="RossCooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lmc-Yl-3pQ"/>
                         <viewControllerLayoutGuide type="bottom" id="aP6-iB-tYk"/>
@@ -72,6 +72,7 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginButton:" destination="NZ3-MT-4yV" eventType="touchUpInside" id="VP5-35-dTO"/>
                                     <segue destination="dhp-Vk-yFm" kind="show" id="1Cz-3p-8FP"/>
                                 </connections>
                             </button>
@@ -97,6 +98,10 @@
                             <constraint firstItem="MZe-J4-kfJ" firstAttribute="width" secondItem="Be2-2t-5re" secondAttribute="width" id="zwG-AT-Zkl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Be2-2t-5re" id="VWH-A7-cGh"/>
+                        <outlet property="passwordTextField" destination="MZe-J4-kfJ" id="zZo-Ap-68j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Viz-po-mDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,25 +1,15 @@
 //
-//  LoginViewController.swift
+//  SignupViewController.swift
 //  RossCooks
 //
-//  Created by Luca Hagel on 10/13/16.
+//  Created by Luca Hagel on 10/26/16.
 //  Copyright © 2016 Luca Hagel. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class LoginViewController: UIViewController {
-  @IBOutlet weak var emailTextField: UITextField!
-  @IBOutlet weak var passwordTextField: UITextField!
+class SignupViewController: UIViewController {
 
-  @IBAction func loginButton(_ sender: AnyObject) {
-    FIRAuth.auth()!.signIn(withEmail: emailTextField.text!,
-                           password: passwordTextField.text!)
-    if let user: FIRUser = FIRAuth.auth()?.currentUser {
-      print(user.email)
-    }
-  }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +22,14 @@ class LoginViewController: UIViewController {
     }
     
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

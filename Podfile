@@ -8,4 +8,5 @@ target 'RossCooks' do
   # Pods for RossCooks
   pod 'SwiftyJSON'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 end
