@@ -132,6 +132,44 @@
        "description": "Stir in balsamic vinegar and brown sugar, mix to coat and serve."
        }
      ]
+   },
+   {
+   "Title": "Spinach with Shallots",
+   "Rating": 5,
+   "Difficulty": 2,
+   "image": "spinach",
+   "Tools": [
+     "stove",
+     "medium skillet",
+     "utensils"
+     ],
+   "Ingredients": [
+     "shallot",
+     "olive oil",
+     "baby spinach",
+     "salt and pepper"
+     ],
+   "Tags": [
+    "side",
+    "vegetarian"
+    ],
+   "Steps": [
+     {
+     "Step_Title": "",
+     "imgage": "",
+     "description": "In a large skillet, heat olive oil over medium heat."
+     },
+     {
+     "Step_Title": "",
+     "imgage": "",
+     "description": "Stir in shallots and cook until transparent, about 5 minutes."
+     },
+     {
+     "Step_Title": "",
+     "imgage": "",
+     "description": "Add spinach, sprinkle with salt and pepper; cook and stir 3 to 5 minutes until leaves are wilted and reduced."
+     }
+     ]
    }
   ]
 }
