@@ -21,8 +21,10 @@ class RecipeViewController: UITableViewController {
         tableView.allowsSelection = false;
         
         // Along with auto layout, these are the keys for enabling variable cell height
-        //tableView.estimatedRowHeight = 44.0
-        //tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+      
+      self.navigationItem.title = recipe.title
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,15 +62,6 @@ class RecipeViewController: UITableViewController {
                 cell.labelTools.text?.append(tool + "\n")
             }
             
-            /*
-            if cell.labelTools. > cell.labelIngredients.contentSize.height {
-                requirementsCellHeight = cell.labelTools.contentSize.height
-            }
-            else {
-                requirementsCellHeight = cell.labelIngredients.contentSize.height
-            }
-            */
-            
             return cell
         } else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "stepsLabelCell", for: indexPath)
@@ -76,8 +69,8 @@ class RecipeViewController: UITableViewController {
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath)
-            cell.textLabel?.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].stepTitle
-            cell.detailTextLabel?.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].description
+            cell.textLabel?.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].description
+          cell.textLabel?.numberOfLines = 0
             return cell
         }
     }
@@ -96,13 +89,11 @@ class RecipeViewController: UITableViewController {
             return 110
         }
         else if indexPath.row == 1 {
-            //return requirementsCellHeight
             return 150
         }
         else {
-            return 44
+            return UITableViewAutomaticDimension
         }
-        
     }
 
     /*
