@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 
 class RecipeListTableViewController: UITableViewController {
+  //@IBOutlet var tableView: UITableView!
   
   @IBOutlet weak var loginButton: UIBarButtonItem!
   
@@ -22,8 +23,13 @@ class RecipeListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        let backgroundImage = UIImage(named: "spinach")
+        let backgroundView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = backgroundView
+        self.tableView.backgroundView?.contentMode = .scaleAspectFill
 
-      recipes = JSONHelper.loadTestRecipes()
+        recipes = JSONHelper.loadTestRecipes()
     }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -52,8 +58,11 @@ class RecipeListTableViewController: UITableViewController {
       
         // Configure the cell...
         cell.recipeTitleLabel.text = recipes[indexPath.row].title
+        cell.recipeTitleLabel.sizeToFit()
       
-        cell.backgroundColor = UIColor.darkGray
+      
+        //cell.backgroundColor = UIColor.black
+      
         cell.recipeTitleLabel.textColor = UIColor.white
 
         return cell
