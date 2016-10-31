@@ -2,8 +2,10 @@
   "Recipes":[
     {
       "Title": "KISS Salmon",
-      "Rating": 4,
+      "Upvotes": 14,
+      "Downvotes": 2,
       "Difficulty": 1,
+      "Time": "45 min",
       "image": "salmon",
       "Tools": [
         "11x7 baking dish",
@@ -54,8 +56,10 @@
     },
     {
       "Title": "Easy Garlic Chicken",
-      "Rating": 4,
+      "Upvotes": 22,
+      "Downvotes": 3,
       "Difficulty": 1,
+      "Time": "20 min",
       "image": "chicken",
       "Tools": [
         "stove",
@@ -97,8 +101,10 @@
     },
    {
      "Title": "Balsamic Glazed Carrots",
-     "Rating": 3,
+     "Upvotes": 16,
+     "Downvotes": 1,
      "Difficulty": 1,
+     "Time": "15 min",
      "image": "carrots",
      "Tools": [
        "stove",
@@ -135,8 +141,10 @@
    },
    {
    "Title": "Spinach with Shallots",
-   "Rating": 5,
+   "Upvotes": 25,
+   "Downvotes": 5,
    "Difficulty": 2,
+   "Time": "13 min",
    "image": "spinach",
    "Tools": [
      "stove",
