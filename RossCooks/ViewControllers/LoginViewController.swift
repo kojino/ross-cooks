@@ -16,9 +16,9 @@ class LoginViewController: UIViewController {
   @IBAction func loginButton(_ sender: AnyObject) {
     FIRAuth.auth()!.signIn(withEmail: emailTextField.text!,
                            password: passwordTextField.text!)
-    if let user: FIRUser = FIRAuth.auth()?.currentUser {
-      print(user.email)
-    }
+    //if let user: FIRUser = FIRAuth.auth()?.currentUser {
+      //print(user.email)
+    //}
   }
     override func viewDidLoad() {
         super.viewDidLoad()
