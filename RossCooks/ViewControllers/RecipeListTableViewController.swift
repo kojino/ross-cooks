@@ -11,9 +11,14 @@ import Firebase
 import FirebaseAuth
 
 class RecipeListTableViewController: UITableViewController {
-  //@IBOutlet var tableView: UITableView!
+    //@IBOutlet var tableView: UITableView!
+    @IBAction func unwindToContainerVC(segue: UIStoryboardSegue) {
+      if let user = FIRAuth.auth()?.currentUser {
+        self.loginButton.title = user.email
+      }
+    }
   
-  @IBOutlet weak var loginButton: UIBarButtonItem!
+    @IBOutlet weak var loginButton: UIBarButtonItem!
   
     var recipes: [Recipe]! {
       didSet {

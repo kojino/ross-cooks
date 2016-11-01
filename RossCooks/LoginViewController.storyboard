@@ -82,7 +82,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="NZ3-MT-4yV" eventType="touchUpInside" id="VP5-35-dTO"/>
-                                    <segue destination="dhp-Vk-yFm" kind="show" id="1Cz-3p-8FP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,9 +109,11 @@
                     <connections>
                         <outlet property="emailTextField" destination="Be2-2t-5re" id="VWH-A7-cGh"/>
                         <outlet property="passwordTextField" destination="MZe-J4-kfJ" id="zZo-Ap-68j"/>
+                        <segue destination="idM-yU-cZa" kind="unwind" identifier="loggedIn" unwindAction="unwindToContainerVCWithSegue:" id="chT-GO-9jI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Viz-po-mDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="idM-yU-cZa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="139.880059970015"/>
         </scene>
