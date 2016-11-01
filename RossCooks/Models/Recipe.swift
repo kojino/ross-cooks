@@ -15,7 +15,6 @@ struct Step {
 
 struct Recipe {
   let title: String
-  //let rating: Int
   let thumbsUp: Int
   let thumbsDown: Int
   let timeRequired: String

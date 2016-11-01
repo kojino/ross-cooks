@@ -16,7 +16,6 @@
 		3FAA586C1DB03CC40083A691 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA586B1DB03CC40083A691 /* LoginViewController.swift */; };
 		3FAA58701DB03CE20083A691 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */; };
 		3FAA58721DB03CF00083A691 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58711DB03CF00083A691 /* ProfileViewController.swift */; };
-		3FAA58741DB03D0B0083A691 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58731DB03D0B0083A691 /* User.swift */; };
 		3FAA58771DB03D4D0083A691 /* RecipeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA58761DB03D4D0083A691 /* RecipeListTableViewCell.swift */; };
 		3FAA58791DB03D7C0083A691 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FAA58781DB03D7C0083A691 /* data.json */; };
 		3FCBEA6A1DB03B7C00714AC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCBEA691DB03B7C00714AC5 /* AppDelegate.swift */; };
@@ -44,7 +43,6 @@
 		3FAA586B1DB03CC40083A691 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FAA586F1DB03CE20083A691 /* SubmissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
 		3FAA58711DB03CF00083A691 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		3FAA58731DB03D0B0083A691 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FAA58761DB03D4D0083A691 /* RecipeListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTableViewCell.swift; sourceTree = "<group>"; };
 		3FAA58781DB03D7C0083A691 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3FCBEA661DB03B7C00714AC5 /* RossCooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RossCooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				3FAA58671DB03C890083A691 /* Recipe.swift */,
-				3FAA58731DB03D0B0083A691 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,7 +318,6 @@
 				3FAA58701DB03CE20083A691 /* SubmissionViewController.swift in Sources */,
 				91AD48B71DB9363E004C992A /* RequirementsTableViewCell.swift in Sources */,
 				91C1C62E1DC7BF94002E0C97 /* BelowImageTableViewCell.swift in Sources */,
-				3FAA58741DB03D0B0083A691 /* User.swift in Sources */,
 				3FAA586C1DB03CC40083A691 /* LoginViewController.swift in Sources */,
 				3FAA58721DB03CF00083A691 /* ProfileViewController.swift in Sources */,
 				3F911B2E1DB6BAF200A121CD /* RecipeListTableViewController.swift in Sources */,

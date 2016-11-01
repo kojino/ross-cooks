@@ -17,7 +17,6 @@ class RecipeViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    //tableView.allowsSelection = false;
     
     // Along with auto layout, these are the keys for enabling variable cell height
     tableView.estimatedRowHeight = 44.0
@@ -97,15 +96,6 @@ class RecipeViewController: UITableViewController {
     }
   }
   
-  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    /*
-    if indexPath.row >= 4 {
-      let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath) as! StepTableViewCell
-      cell.accessoryType = .checkmark
-    }
-  */
-  }
-  
   override func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
@@ -125,15 +115,4 @@ class RecipeViewController: UITableViewController {
         return UITableViewAutomaticDimension
     }
   }
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
 }

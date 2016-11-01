@@ -67,20 +67,12 @@ class RecipeListTableViewController: UITableViewController {
         cell.recipeTitleLabel.text = recipes[indexPath.row].title
         cell.recipeTitleLabel.sizeToFit()
       
-      
-        //cell.backgroundColor = UIColor.black
-      
         cell.recipeTitleLabel.textColor = UIColor.white
 
         return cell
     }
 
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
       if segue.identifier == "ShowRecipe" {
         let destination = segue.destination as! RecipeViewController
         if let indexPath = tableView.indexPathForSelectedRow {

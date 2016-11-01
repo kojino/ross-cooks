@@ -52,7 +52,6 @@ class JSONHelper {
         }
         
         let recipe = Recipe(title: recipeJSON["Title"].stringValue,
-                            //rating: recipeJSON["Rating"].intValue,
                             thumbsUp: recipeJSON["Upvotes"].intValue,
                             thumbsDown: recipeJSON["Downvotes"].intValue,
                             timeRequired: recipeJSON["Time"].stringValue,
