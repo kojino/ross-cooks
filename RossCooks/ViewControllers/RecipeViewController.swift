@@ -13,18 +13,18 @@ class RecipeViewController: UITableViewController {
   
   var requirementsCellHeight:CGFloat = 225
   
-  let numberOfCellsBeforeSteps = 3
+  let numberOfCellsBeforeSteps = 4
   
   override func viewDidLoad() {
     super.viewDidLoad()
     //tableView.allowsSelection = false;
-    
     
     // Along with auto layout, these are the keys for enabling variable cell height
     tableView.estimatedRowHeight = 44.0
     tableView.rowHeight = UITableViewAutomaticDimension
     
     self.navigationItem.title = recipe.title
+    self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
   }
   
   override func didReceiveMemoryWarning() {
@@ -86,17 +86,24 @@ class RecipeViewController: UITableViewController {
       cell.isUserInteractionEnabled = false
       return cell
     default:
-      let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath)
-      cell.textLabel?.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].description
-      cell.textLabel?.numberOfLines = 0
+      let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath) as! StepTableViewCell
+      cell.stepLabel.text = recipe.steps[indexPath.row - numberOfCellsBeforeSteps].description
+      cell.numberLabel.text = String(indexPath.row - numberOfCellsBeforeSteps + 1)
+      cell.stepLabel.numberOfLines = 0
       cell.selectionStyle = .none
+      cell.layoutSubviews() // needed to (mostly) resolve an incorrect layout bug
       
       return cell
     }
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+    /*
+    if indexPath.row >= 4 {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "stepCell", for: indexPath) as! StepTableViewCell
+      cell.accessoryType = .checkmark
+    }
+  */
   }
   
   override func numberOfSections(in tableView: UITableView) -> Int {
