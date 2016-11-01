@@ -35,6 +35,8 @@ class RecipeListTableViewController: UITableViewController {
         self.tableView.backgroundView?.contentMode = .scaleAspectFill
 
         recipes = JSONHelper.loadTestRecipes()
+      
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }
   
   override func viewDidAppear(_ animated: Bool) {

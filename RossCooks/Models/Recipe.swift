@@ -8,18 +8,21 @@
 
 import UIKit
 struct Step {
-    let stepTitle: String
-    let image: String
-    let description: String
+  let stepTitle: String
+  let image: String
+  let description: String
 }
 
 struct Recipe {
-    let title: String
-    let rating: Int
-    let difficulty: Int
-    let image: String
-    let tools: [String]
-    let ingredients: [String]
-    let tags: [String]
-    let steps: [Step]
+  let title: String
+  //let rating: Int
+  let thumbsUp: Int
+  let thumbsDown: Int
+  let timeRequired: String
+  let difficulty: Int
+  let image: String
+  let tools: [String]
+  let ingredients: [String]
+  let tags: [String]
+  let steps: [Step]
 }
